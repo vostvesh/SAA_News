@@ -1,7 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Aleksandr Shevtsov
- * Date: 09.10.2015
- * Time: 9:46
- */
+$title = $_GET['title'];
+$content = $_GET['content'];
+$date = $_GET['date'];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1><?php echo $title;?></h1>
+    <p><?php echo $content;?></p>
+    <p><?php echo $date;?></p>
+    <a href="index.php">На главную</a>
+</body>
+</html>
