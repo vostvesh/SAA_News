@@ -13,6 +13,6 @@ $date = $_GET['date'];
     <h1><?php echo $title;?></h1>
     <p><?php echo $content;?></p>
     <p><?php echo $date;?></p>
-    <a href="index.php">На главную</a>
+    <a href="/SAA_News/index.php">На главную</a>
 </body>
 </html>
