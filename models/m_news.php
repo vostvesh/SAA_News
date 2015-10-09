@@ -7,6 +7,8 @@ require_once __DIR__. "/../function/function.php";
 //    ['title' => 'Новость 3', 'content' => 'Выборы...', 'date' => '24-11-15'],
 //];
 
+$sql = "SELECT * FROM news ORDER BY mydate DESC";
+
 $sql = "SELECT * FROM news";
 $all_news = GetAllNews($sql);
 
@@ -17,3 +19,4 @@ if($_POST) {
     header('Location: index.php');
     die;
 }
+
