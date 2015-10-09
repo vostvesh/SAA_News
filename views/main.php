@@ -15,12 +15,5 @@
         <hr>
     <?php endforeach?>
     <a href="/SAA_News/views/add.php">Добавить новость</a>
-
-
-
-    <?php
-    $today = date("Y-m-d H:i:s");
-    echo $today;
-    ?>
 </body>
 </html>
