@@ -11,7 +11,9 @@ $sql = "SELECT * FROM news";
 $all_news = GetAllNews($sql);
 
 
-if(is_uploaded_file($_FILES['tmp_name'])){
+if($_POST) {
     $sql = "INSERT INTO news(title, path, mydate) VALUES ('$gl_title', '$gl_file', '$gl_ate')";
     CreateNews($sql);
+    header('Location: index.php');
+    die;
 }

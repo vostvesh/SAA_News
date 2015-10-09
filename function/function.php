@@ -15,8 +15,8 @@ function GetAllNews($sql){
 }
 
 function CreateNews($sql){
-    $dir = __DIR__. "/content/";
-    move_uploaded_file($_FILES['tmp_name'], $dir . $_FILES['name']);
+    $dir = __DIR__. "/../content/";
+    move_uploaded_file($_FILES['content']['tmp_name'], $dir . $_FILES['content']['name']);
     dbConnect();
     mysql_query($sql);
 }
