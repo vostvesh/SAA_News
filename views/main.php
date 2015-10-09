@@ -7,10 +7,10 @@
 <body>
     <?php foreach($all_news as $news):?>
         <h3><?php echo $news['title'];?></h3>
-        <p><?php echo $news['content'];?></p>
+        <p><?php echo $news['path'];?></p>
         <p><?php echo 'Дата: ' . $news['date'];?></p>
         <a href="/SAA_News/views/single.php?title=<?php echo $news['title']?>
-                            &content=<?php echo $news['content']?>
+                            &content=<?php echo $news['path']?>
                             &date=<?php echo $news['date']?>">Читать полностью</a>
         <hr>
     <?php endforeach?>

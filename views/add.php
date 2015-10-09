@@ -12,7 +12,7 @@
         <input type="file" name="content">
         <br>
         <input type="hidden" name="date" value="<?php echo date("Y-m-d H:i:s");?>">
-        <input type="submit">
+        <input type="submit" value="submit">
     </form>
 </body>
 </html>

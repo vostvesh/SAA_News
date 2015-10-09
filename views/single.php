@@ -11,7 +11,7 @@ $date = $_GET['date'];
 </head>
 <body>
     <h1><?php echo $title;?></h1>
-    <p><?php echo $content;?></p>
+    <p><?php echo readfile($content);?></p>
     <p><?php echo $date;?></p>
     <a href="/SAA_News/index.php">На главную</a>
 </body>
